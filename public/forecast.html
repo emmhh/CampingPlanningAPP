@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pittsburgh Weather Forecast</title>
+    <link rel="stylesheet" href="forecast.css">
+</head>
+
+<body>
+    <h1>Pittsburgh Weather Forecast</h1>
+    <div id="city-selector">
+        <label for="city">Choose a city:</label>
+        <select id="city">
+            <option value="">Select a city</option>
+            <option value="15213">Pittsburgh</option>
+            <option value="19103">Philadelphia</option>
+            <option value="16505">Erie</option>
+        </select>
+        <button id="load-weather">Load Weather</button>
+    </div>
+    <div id="forecast-container">
+        <!-- Forecast data will be displayed here -->
+    </div>
+
+    <svg id="temp-bar-chart" width="600" height="450">
+        <!-- Bar chart will be generated here -->
+    </svg>
+    <script src="forecast.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</body>
+
+</html>

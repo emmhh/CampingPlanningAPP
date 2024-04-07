@@ -1,0 +1,139 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef2f3; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+h1 {
+    text-align: center;
+    color: #0a5298; /* Dark blue color */
+}
+
+#forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#city-selector {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city-selector label {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#city-selector select {
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-appearance: none; /* Removes default styling for select on WebKit browsers */
+    -moz-appearance: none; /* Removes default styling for select on Mozilla browsers */
+    appearance: none; /* Removes default styling for select */
+    background: url(arrow-down-icon.svg) no-repeat right; /* Add your down arrow icon */
+    background-size: 12px; /* Size of the background icon */
+    background-origin: content-box;
+    padding-right: 2em; /* Make room for the icon */
+}
+
+#city-selector button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#city-selector button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for the forecast cards to match the design */
+.forecast-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.forecast-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.forecast-card p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.forecast-period {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(100% / 3 - 40px); /* Three cards per row with spacing */
+    box-sizing: border-box;
+}
+
+.forecast-period h3 {
+    margin-top: 0;
+    color: #106ba3; /* Light blue color */
+}
+
+.forecast-period img {
+    width: 100%; /* Make the image responsive */
+    max-width: 80px; /* But not too large */
+    height: auto;
+}
+
+#temp-bar-chart rect {
+    transition: fill 0.3s ease;
+}
+
+#temp-bar-chart rect:hover {
+    fill: darkblue;
+}
+
+#temp-bar-chart text {
+    font-family: 'Arial', sans-serif;
+    fill: #333;
+}
+
+#temp-bar-chart line {
+    stroke: #333;
+    stroke-width: 1;
+}
+
+@media (max-width: 600px) {
+    .forecast-period {
+        width: calc(100% - 40px); /* Full width on small screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .forecast-period {
+        width: calc(100% - 40px); /* Full width on small screens */
+    }
+}

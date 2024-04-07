@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Locations for Meteor Shower Observation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+          <h1>
+            <a class="navbar-brand" href="/forecast.html">Weather Analysis</a>
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <div class="navbar-nav navbar-right">
+              <a class="nav-link" href="/forecast.html">MongoDB</a>
+              <a class="nav-link" href="#">MySQL</a>
+              <a class="nav-link" href="#">Neo4j</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <article>
+      <div class="container-fluid">
+        <div class="jumbotron text-center">
+          <h2 id="analysis-title">
+            Best Locations for Meteor Shower Observation
+          </h2>
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-512/free-meteor-3273589-2741632.png?f=webp&w=512"
+            alt="Meteor Icon"
+            width="50"
+            height="50"
+          />
+
+          <p>Check out the great location we recommand for you!</p>
+        </div>
+        <button id="getDataBtn" class="btn btn-primary">
+          Get Best Locations
+        </button>
+        <div id="dataDisplay"></div>
+      </div>
+    </article>
+    <!-- 引入自定义的JavaScript -->
+    <script src="neo4jData.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
