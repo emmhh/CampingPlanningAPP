@@ -1,1 +1,1 @@
-# INFSCI2711
+# Front-end of the neo4j data warehouse
